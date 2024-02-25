@@ -8,3 +8,7 @@ file { '/tmp/school':
   groub   => 'www-data',
   require => File['/tmp'],
 }
+
+file { '/tmp':
+  ensure  => directory,
+}
