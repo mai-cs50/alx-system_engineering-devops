@@ -6,4 +6,5 @@ file { '/tmp/school':
   mode    => '0744',
   owner   => 'www-data',
   groub   => 'www-data',
+  require => File['/tmp'],
 }
