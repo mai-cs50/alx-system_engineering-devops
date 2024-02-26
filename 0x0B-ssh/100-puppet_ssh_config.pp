@@ -1,13 +1,13 @@
 # practice using Puppet
 file-line { 'replace passwordAuthentication':
   ensure  => 'present',
-  path    => '/etc/ssh/ssh_config',
+  path    => '/etc/ssh/sshd_config',
   replace => true,
-  line    => 'passwordAuthentication no',
-  match   => 'passwordAuthentication yes',
+  line    => 'PasswordAuthentication no',
+  match   => 'PasswordAuthentication yes',
 }
 file-line {'add the private key ~/.ssh/school':
   ensure => 'present',
-  path   => '/etc/ssh/ssh_config',
+  path   => '~/.ssh/config',
   line   => 'IdentityFile ~/.ssh/school',
 }
