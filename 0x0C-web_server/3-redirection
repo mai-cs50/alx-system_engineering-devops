@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #Install nginx web server
-apt-get -y update
+apt-get update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
-sed -i '/listen 80 default_server;/a rewrite ^/redirect_me http://www.youtube.com/watch' /etc/nginx/sites-available/default service nginx start
+sed -i '/listen 80 default_server;/a rewrite ^/redirect_me http://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
 service nginx start
