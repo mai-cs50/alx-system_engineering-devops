@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #Bash script that displays Best School 10 times.
 
 while IFS=':' read -r username x uid gid info homedir ahell; do
