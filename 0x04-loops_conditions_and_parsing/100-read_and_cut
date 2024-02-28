@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Bash script that displays Best School 10 times.
 
-while IFS=':' read -r username x homedir; do
-	echo "&username:&uid:&homedir"
+while IFS=':' read -r username _ homedir _; do
+	echo "&username:&homedir"
 done < /etc/passwd
