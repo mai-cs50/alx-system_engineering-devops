@@ -2,7 +2,7 @@
 #script that displays Best School 10 times
 
 h=0
-while [ $h -lt 12 ]; do
+while [ $h -lt 13 ]; do
 	echo "Hour: $h"
 	m=1
 	while [ $m -lt 60 ]; do
