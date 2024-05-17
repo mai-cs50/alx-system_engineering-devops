@@ -1,0 +1,5 @@
+sudo apt-get update
+sudo apt-get install certbot
+sudo certbot ceronly --standalone -d www.example.com
+# /etc/haproxy/haproxy.cfg
+
