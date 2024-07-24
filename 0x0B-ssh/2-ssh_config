@@ -1,4 +1,4 @@
-Host *
+Host 54.236.41.98
     PubkeyAuthentication yes
     IdentityFile ~/.ssh/school
     PasswordAuthentication no
