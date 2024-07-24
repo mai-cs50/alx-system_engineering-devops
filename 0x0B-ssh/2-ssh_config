@@ -1,5 +1,4 @@
-Host 54.236.41.98
-    HostName 98.98.98.98
+Host *
     PubkeyAuthentication yes
     IdentityFile ~/.ssh/school
     PasswordAuthentication no
