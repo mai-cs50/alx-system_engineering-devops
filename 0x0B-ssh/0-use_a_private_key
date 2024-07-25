@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 # Write a Bash script that uses ssh
+<<<<<<< HEAD
 ssh -i ~/.ssh/school ubuntu@35.174.205.37
+=======
+ssh -i ~/.ssh/school ubuntu@54.236.41.98
+>>>>>>> 85ffc7fb42c857976a4f4e64a2dd253025703520
