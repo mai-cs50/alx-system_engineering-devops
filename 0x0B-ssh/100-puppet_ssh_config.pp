@@ -1,7 +1,7 @@
 # practice using Puppet
 file-line { 'ssh_password_authentication':
   ensure  => 'present',
-  path    => '/etc/ssh/sshd_config',
+  path    => '/etc/ssh/ssh_config',
   replace => true,
   line    => 'PasswordAuthentication no',
   match   => 'PasswordAuthentication yes',
